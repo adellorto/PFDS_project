@@ -8,6 +8,10 @@ This repository contains a Jupyter Notebook exploring the relationship between G
 - `gross-national-income-per-capita-undp.csv` – GNI per capita dataset from the United Nations Development Programme.
 - `renewable-energy-consumption.csv` – Renewable energy consumption dataset from the World Bank.
 
+## Analysis Methods
+
+The notebook begins by cleaning both datasets. Missing yearly data is filled using linear interpolation with forward and backward fills for edge years. Descriptive statistics are calculated, and several plots are generated, including line charts of time trends, scatter plots comparing countries, and bar charts for extreme values. Finally, a linear regression model is used to explore whether GNI can predict renewable energy consumption.
+
 ## Usage
 
 Open the notebook in Jupyter and execute the cells in order. The datasets are already included in the repository. The notebook relies only on common Python libraries such as `pandas`, `matplotlib` and `seaborn`.
